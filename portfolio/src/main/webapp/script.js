@@ -17,10 +17,10 @@
  */
 function addRandomGreeting() {
   const facts =
-      ['I like seafood', 'I like soccer', 'I like coding', 'I like joking'];
+      ['My favorite food is seafood', 'I like soccer but I am not good at it', 'My favorite programming language is c++', 'The first programming language I learn was java'];
 
   // Pick a random fact about me.
-  const fact = greetings[Math.floor(Math.random() * facts.length)];
+  const fact = facts[Math.floor(Math.random() * facts.length)];
 
   // Add it to the page.
   const factContainer = document.getElementById('fact-container');

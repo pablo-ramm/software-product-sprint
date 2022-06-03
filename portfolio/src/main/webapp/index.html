@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1 class="center">Hello I am Pablo Ramirez</h1>
+      <p>Click the button to get a random fact about me:</p>
+      <div class="center">
+        <button onclick="addRandomGreeting()">Random</button>
+        <div class="center" id="fact-container">Random Fact</div>
+      </div>
+      
+      <p> My name is Pablo Elias Ramirez Martinez, I'm currently enrolled at a B.S in Computer Science and Technology in Monterrey Institute of Technology and Higher Education.
+      </p>
+      <p>
+        I have always been attracted to code because it gives you the power to create endless answers and solutions within the acting of your fingertips, analisis and creativity. Everytime I code I think of it as a challenge, a giant puzzle with endless answers and the idea to come up with the best one is exciting.
+      </p>
+      <img class="center" src = "/images/code.jpg"/>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
     </div>
   </body>
 </html>
