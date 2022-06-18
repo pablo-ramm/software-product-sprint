@@ -26,3 +26,20 @@ function addRandomGreeting() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+
+async function lastTime(){
+    const response = await fetch("/lastTime");
+    const textResponse = await response.text();
+
+    const pLastTime = document.getElementById("lastTime");
+    pLastTime.innerText = textResponse;
+}
+
+async function quote(){
+    const jsonRes = await fetch("/quotes");
+    const object = await jsonRes.json();
+
+    var random_number = Math.floor(Math.random() * 3);
+    const quoteParag = document.getElementById("quote");
+    quoteParag.innerText = object.messages[random_number];
+}
