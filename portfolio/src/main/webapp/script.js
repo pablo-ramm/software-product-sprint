@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const facts =
-      ['My favorite food is seafood', 'I like soccer but I am not good at it', 'My favorite programming language is c++', 'The first programming language I learn was java'];
+      ['My favorite food is seafood', 'I like soccer but I am not good at it', 'My favorite programming language is c++', 'The first programming language I learnt was java'];
 
   // Pick a random fact about me.
   const fact = facts[Math.floor(Math.random() * facts.length)];
